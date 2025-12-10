@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poneglyph</title>
+    <link rel="icon" href="../SOURCE/IMG/Poneglyph Logo.png" type="image/png">
+    <link rel="stylesheet" href="../CSS/colosseum.css">
+</head>
+
+<body id="top">
+    <header class="header">
+        <div>
+            <div class="logo">
+                <a href="../HTML/homepage.html#top" class="pone-link">
+                    <img src="../SOURCE/IMG/Poneglyph Logo.png" alt="Logo">
+                </a>
+            </div>
+
+            <div class="title-box">
+                <a href="../HTML/homepage.html#top" class="pone-link"><h1>PONEGLYPHS</h1>
+                    <p>Records of Stone and Memory</p>
+                </a>
+            </div>
+            <nav>
+                <div class="nav">
+                    <a href="../HTML/homepage.html#top" id="navHome">HOME</a>
+                    <a href="../HTML/homepage.html#about" id="navAbout">ABOUT</a>
+                    <a href="../HTML/explore.html" id="navExplore">EXPLORE</a>
+                    <a href="../HTML/creators.html" id="navCreators">CREATORS</a>
+                </div>
+
+                <div class="burger-menu" id="burgerMenu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <div class="mobile-nav" id="mobileNav">
+                    <a href="../HTML/homepage.html#top" id="navHome">HOME</a>
+                    <a href="../HTML/about.html#about" id="navAbout">ABOUT</a>
+                    <a href="../HTML/explore.html#explore" id="navExplore">EXPLORE</a>
+                    <a href="../HTML/creators.html#creators" id="navCreators">CREATORS</a>
+                </div>
+
+                <div class="search-box">
+                    <input type="text" placeholder="Search Monuments" id="searchInput">
+                    <img src="../SOURCE/IMG/search_icon.png" alt="search_icon" class="search-icon" id="searchBtn">
+
+                    <ul id="monumentsList">
+                        <li data-url="colosseum.html">
+                            <img src="../SOURCE/IMG/search_icon_colosseum.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Colosseum</span>
+                                <span class="li-subtitle">The iconic Roman amphitheater</span>
+                            </div>
+                        </li>
+                        <li data-url="stpetersbasilica.html">
+                            <img src="../SOURCE/IMG/search_icon_stpeter.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">St. Peter's Basilica</span>
+                                <span class="li-subtitle">Vatican City landmark</span>
+                            </div>
+                        </li>
+                        <li data-url="pantheon.html">
+                            <img src="../SOURCE/IMG/search_icon_pantheon.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Pantheon</span>
+                                <span class="li-subtitle">Ancient Roman temple</span>
+                            </div>
+                        </li>
+                        <li data-url="trevifountain.html">
+                            <img src="../SOURCE/IMG/search_icon_trevi.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Trevi Fountain</span>
+                                <span class="li-subtitle">Famous Roman fountain</span>
+                            </div>
+                        </li>
+                        <li data-url="romanforum.html">
+                            <img src="../SOURCE/IMG/search_icon_roman.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Roman Forum</span>
+                                <span class="li-subtitle">Center of ancient Rome</span>
+                            </div>
+                        </li>
+                        <li data-url="castelsantangelo.html">
+                            <img src="../SOURCE/IMG/search_icon_castel.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Castel Sant' Angelo</span>
+                                <span class="li-subtitle">Historic fortress and museum</span>
+                            </div>
+                        </li>
+                        <li data-url="piazzanavona.html">
+                            <img src="../SOURCE/IMG/search_icon_pizza.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Piazza Navona</span>
+                                <span class="li-subtitle">Baroque square in Rome</span>
+                            </div>
+                        </li>
+                        <li data-url="palatinehill.html">
+                            <img src="../SOURCE/IMG/search_icon_palatine.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Palatine Hill</span>
+                                <span class="li-subtitle">One of Rome's seven hills</span>
+                            </div>
+                        </li>
+                        <li data-url="bathsofcarcalla.html">
+                            <img src="../SOURCE/IMG/search_icon_baths.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Baths of Caracalla</span>
+                                <span class="li-subtitle">Ancient Roman public baths</span>
+                            </div>
+                        </li>
+                        <li data-url="alterofthefatherland.html">
+                            <img src="../SOURCE/IMG/search_icon_altar.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Altar of the Fatherland</span>
+                                <span class="li-subtitle">National monument of Italy</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="search-toggle" id="searchToggle">
+                    <img src="../SOURCE/IMG/search_icon_white.png" alt="search_icon">
+                </div>
+
+                <div class="search-box" id="mobileSearchBox">
+                    <input type="text" placeholder="Search Monuments" id="mobileSearchInput">
+                </div>
+                <ul id="mobileMonumentsList">
+                    <li data-url="colosseum.html">
+                        <img src="../SOURCE/IMG/search_icon_colosseum.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Colosseum</span>
+                            <span class="li-subtitle">The iconic Roman amphitheater</span>
+                        </div>
+                    </li>
+                    <li data-url="stpetersbasilica.html">
+                        <img src="../SOURCE/IMG/search_icon_stpeter.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">St. Peter's Basilica</span>
+                            <span class="li-subtitle">Vatican City landmark</span>
+                        </div>
+                    </li>
+                    <li data-url="pantheon.html">
+                        <img src="../SOURCE/IMG/search_icon_pantheon.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Pantheon</span>
+                            <span class="li-subtitle">Ancient Roman temple</span>
+                        </div>
+                    </li>
+                    <li data-url="trevifountain.html">
+                        <img src="../SOURCE/IMG/search_icon_trevi.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Trevi Fountain</span>
+                            <span class="li-subtitle">Famous Roman fountain</span>
+                        </div>
+                    </li>
+                    <li data-url="romanforum.html">
+                        <img src="../SOURCE/IMG/search_icon_roman.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Roman Forum</span>
+                            <span class="li-subtitle">Center of ancient Rome</span>
+                        </div>
+                    </li>
+                    <li data-url="castelsantangelo.html">
+                        <img src="../SOURCE/IMG/search_icon_castel.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Castel Sant' Angelo</span>
+                            <span class="li-subtitle">Historic fortress and museum</span>
+                        </div>
+                    </li>
+                    <li data-url="piazzanavona.html">
+                        <img src="../SOURCE/IMG/search_icon_pizza.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Piazza Navona</span>
+                            <span class="li-subtitle">Baroque square in Rome</span>
+                        </div>
+                    </li>
+                    <li data-url="palatinehill.html">
+                        <img src="../SOURCE/IMG/search_icon_palatine.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Palatine Hill</span>
+                            <span class="li-subtitle">One of Rome's seven hills</span>
+                        </div>
+                    </li>
+                    <li data-url="bathsofcarcalla.html">
+                        <img src="../SOURCE/IMG/search_icon_baths.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Baths of Caracalla</span>
+                            <span class="li-subtitle">Ancient Roman public baths</span>
+                        </div>
+                    </li>
+                    <li data-url="alterofthefatherland.html">
+                        <img src="../SOURCE/IMG/search_icon_altar.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Altar of the Fatherland</span>
+                            <span class="li-subtitle">National monument of Italy</span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-image-container">
+        <div class="hero-image">
+            <img src="../SOURCE/IMG/baths_guide1.png" alt="Colosseum" class="base-image">
+            <img src="../SOURCE/IMG/guide_blackspace1.png" alt="shadow" class="bottom-overlay">
+            <div class="hero-text">
+                <h2>ROME</h2>
+                <h1>BATHS OF CARACALLA</h1>
+                <p>
+                    <a href="https://www.google.com/maps/place/Baths+of+Caracalla/@41.8788875,12.4926252,17z/data=!4m6!3m5!1s0x132f61ce333e85d5:0x6a2b4006ea5b98dc!8m2!3d41.8790382!4d12.4924394!16zL20vMDI3eDJr?entry=ttu&g_ep=EgoyMDI1MTIwNy4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank" class="location-link">
+                        <img src="../SOURCE/IMG/location_icon.png" alt="Location Icon" class="location-icon">
+                        Viale delle Terme di Caracalla, 00153 Rome, Italy
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider-top">
+
+    <div class="caption-container fade-in">
+        <span class="caption">“Where echoes of warm waters linger, mosaics guard forgotten stories, and towering walls meet the open sky, a palace of ancient leisure becomes Rome’s timeless sanctuary of splendor.”</span>
+    </div>
+
+    <div class="polaroid fade-in">
+        <img src="../SOURCE/IMG/baths_guide2.png" alt="Polaroid 1">
+        <img src="../SOURCE/IMG/baths_guide3.png" alt="Polaroid 2">
+        <img src="../SOURCE/IMG/baths_guide4.png" alt="Polaroid 3">
+    </div>
+
+    <hr class="section-divider-bottom">
+
+    <section class="monument-description fade-in">
+        <div class="monument-container">
+            <img src="../SOURCE/IMG/baths_guide5.png" alt="Monument Description" class="base-image">
+            <img src="../SOURCE/IMG/guide_blackspace2.png" alt="Top Shadow Overlay" class="top-desc-shadow">
+            <img src="../SOURCE/IMG/guide_blackspace3.png" alt="Bottom Shadow Overlay" class="bottom-desc-shadow">
+            <img src="../SOURCE/IMG/baths_guide6.png" alt="Colosseum Description Pic" class="colosseum_desc_pic">
+
+            <div class="md-logo-wrapper">
+                <a href="https://www.britannica.com/topic/Baths-of-Caracalla" target="_blank" class="logo-link">
+                    <img src="../SOURCE/IMG/poneglyph_logo_small_guide.png" alt="Reference Link Pic" class="logo_small">
+                </a>
+                <span class="tooltip">Click to see more info</span>
+            </div>
+
+            <div class="colosseum-text">
+                <h1>BATHS OF CARACALLA</h1>
+                <h2>Thermae Antoninianae</h2>
+            </div>
+
+            <div class="colosseum-right-desc">
+                <p>
+                    The **Baths of Caracalla** stand as one of the grandest and <strong>preserved bath complexes of ancient Rome</strong>.<br><br>
+                    Built under <strong>Emperors Septimius Severus and Caracalla</strong> in the early third century.<br><br>
+                    At the center were the <strong>Caldarium, Tepidarium, and Frigidarium</strong>, three monumental bathing halls arranged along a central axis.<br><br>
+                    On both sides of the baths were the <strong>Palaestrae</strong>, open courtyards used for exercise and athletic training.<br><br>
+                    The complex could accommodate thousands of visitors, offering both <strong>leisure and cultural enrichment</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="built_history fade-in">
+        <div class="history-content">
+            <div class="history-text">
+                <h1>HOW IT WAS BUILT</h1>
+                    <p>The Baths of Caracalla were constructed during the <strong>early third century AD</strong>. Work began under <strong>Emperor Septimius Severus</strong> and was completed by his son, <strong>Caracalla</strong>, in <strong>216 AD</strong>.</p>
+
+                    <p>The massive structure was built using <strong>brick, concrete, marble, and granite</strong>. Concrete formed the structural core, allowing for vast interior spaces.</p>
+
+                    <p>The heating system relied on a vast <strong>hypocaust network</strong>, where furnaces heated air that circulated through raised floors.</p>
+
+                    <p>After completion, the baths covered more than <strong>twenty-five hectares</strong> and could host several thousand visitors at once.</p>
+            </div>
+
+            <div class="history-images">
+                <img src="../SOURCE/IMG/baths_guide7.png" alt="Construction Image 1">
+                <img src="../SOURCE/IMG/baths_guide8.png" alt="Construction Image 2">
+
+                <div class="history-logo-wrapper">
+                    <a href="https://www.britannica.com/topic/Baths-of-Caracalla" target="_blank"
+                        class="logo-link">
+                        <img src="../SOURCE/IMG/poneglyph_logo_small_guide.png" alt="Reference Link Pic"
+                            class="logo_small">
+                    </a>
+                    <span class="tooltip">Click to see more info</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="inside-arena fade-in">
+        <div class="arena-container">
+            <img src="../SOURCE/IMG/baths_guide9.png" alt="Inside the Arena" class="base-arena-image">
+            <img src="../SOURCE/IMG/guide_blackspace2.png" alt="Top Shadow Overlay" class="top-arena-shadow">
+            <img src="../SOURCE/IMG/guide_blackspace3.png" alt="Bottom Shadow Overlay" class="bottom-arena-shadow">
+            <img src="../SOURCE/IMG/baths_guide10.png" alt="Side Picture" class="arena-side-image">
+
+            <div class="inside-logo-wrapper">
+                <a href="https://www.rome.net/baths-caracalla" target="_blank" class="logo-link">
+                    <img src="../SOURCE/IMG/poneglyph_logo_small_guide.png" alt="Reference Link Pic" class="logo_small">
+                </a>
+                <span class="tooltip">Click to see more info</span>
+            </div>
+
+            <div class="arena-text">
+                <h1>INSIDE THE MONUMENT</h1>
+                    <p>
+                        The interior areas reveal the scale of ancient Rome’s greatest public bath complexes. Visitors can identify the main bathing rooms, including the <strong>tepidarium and caldarium</strong>.<br><br>
+
+                        These rooms were heated through an elaborate <strong>hypocaust system</strong> beneath the floors.<br><br>
+
+                        Beneath the baths, a network of <strong>underground service tunnels</strong> allowed workers to maintain the furnaces without being seen.<br><br>
+
+                        Fragments of <strong>mosaics and pieces of carved marble</strong> hint at the colorful decorations that once filled the building.
+                    </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="structure-today fade-in">
+        <div class="structure-container">
+            <div class="structure-text">
+                <h1>THE STRUCTURE TODAY</h1>
+                    <p>
+                        Today, the Baths of Caracalla stand as one of Rome’s most <strong>impressive surviving ancient structures</strong>.
+                    </p>
+                    <p>
+                        Although the roofs have disappeared, the <strong>towering walls and vast arches</strong> still outline the original layout of the complex.
+                    </p>
+                    <p>
+                        These remains help visitors understand how thousands of Romans once moved through the <strong>bathing rooms and communal spaces</strong>.
+                    </p>
+            </div>
+            <div class="structure-image-container">
+                <img src="../SOURCE/IMG/baths_guide11.png" alt="Structure Today" class="structure-image">
+                <img src="../SOURCE/IMG/baths_guide12.png" alt="Additional Structure"
+                    class="structure-below-image">
+                <div class="structure-additional-text">
+                    <p>
+                        Ongoing conservation efforts protect the site’s surviving <strong>mosaics, underground passages, and monumental brickwork</strong>.
+                    </p>
+                    <p>
+                        Visitors can walk across the expansive lawn where the <strong>natatio</strong> once stood and view the remains of the frigidarium.
+                    </p>
+                    <p>
+                        The grounds are now used for <strong>outdoor events and concerts</strong>, giving new life to the space.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fun-facts fade-in">
+        <div class="fun-facts-container">
+            <img src="../SOURCE/IMG/baths_guide13.png" alt="Fun Facts Base" class="funfacts-base">
+            <img src="../SOURCE/IMG/guide_blackspace2.png" alt="Top Shadow Overlay" class="funfacts-top-shadow">
+            <img src="../SOURCE/IMG/guide_blackspace3.png" alt="Bottom Shadow Overlay" class="funfacts-bottom-shadow">
+            <img src="../SOURCE/IMG/baths_guide14.png" alt="Fun Fact Extra" class="funfacts-overlay">
+            <div class="fun-facts-text">
+                <h1>FUN FACTS</h1>
+                <p>
+                    The Baths of Caracalla are one of the most <strong>iconic landmarks</strong> of ancient Rome. When they opened in <strong>216 AD</strong>, they could accommodate more than six thousand visitors daily.
+                </p>
+                <p>
+                    The complex covered about <strong>twenty five hectares</strong>, larger than many modern sports facilities.
+                </p>
+                <p>
+                    Water was delivered daily through a special extension of the <strong>Aqua Marcia aqueduct</strong>.
+                </p>
+                <p>
+                    The impressive <strong>heating system</strong> allowed the caldarium to reach warm temperatures even during winter.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="visitor-info fade-in">
+        <div class="visitor-container">
+            <h1>VISITOR INFORMATION</h1>
+            <p>
+                <a href="https://www.google.com/maps/place/Baths+of+Caracalla/@41.8788875,12.4926252,17z/data=!4m6!3m5!1s0x132f61ce333e85d5:0x6a2b4006ea5b98dc!8m2!3d41.8790382!4d12.4924394!16zL20vMDI3eDJr?entry=ttu&g_ep=EgoyMDI1MTIwNy4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank" class="location-link">
+                    <img src="../SOURCE/IMG/location_icon.png" alt="Location Icon" class="location-icon">
+                    Viale delle Terme di Caracalla, 00153 Rome, Italy
+                </a>
+            </p>
+            <a href="https://www.google.com/maps/place/Baths+of+Caracalla/@41.8788875,12.4926252,17z/data=!4m6!3m5!1s0x132f61ce333e85d5:0x6a2b4006ea5b98dc!8m2!3d41.8790382!4d12.4924394!16zL20vMDI3eDJr?entry=ttu&g_ep=EgoyMDI1MTIwNy4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank">
+                <img src="../SOURCE/IMG/baths_guide15.png" alt="Visitor Info Image" class="visitor-image">
+            </a>
+        </div>
+    </section>
+
+    <section class="schedule fade-in">
+        <div class="schedule-container">
+            <img src="../SOURCE/IMG/baths_guide16.png" alt="Schedule Base" class="schedule-base">
+            <img src="../SOURCE/IMG/guide_blackspace2.png" alt="Top Shadow Overlay" class="schedule-top-shadow">
+            <img src="../SOURCE/IMG/guide_blackspace3.png" alt="Bottom Shadow Overlay" class="schedule-bottom-shadow">
+            <div class="schedule-caption">SCHEDULE</div>
+
+            <div class="schedule-table-container">
+                <table class="schedule-table fade-in">
+                    <thead>
+                        <tr>
+                            <th>MONTH</th>
+                            <th>DAYS OPEN</th>
+                            <th>OPENING HOURS</th>
+                            <th>BEST TIP</th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                            <tr>
+                                <td>Jan – Feb</td>
+                                <td>Monday – Sunday</td>
+                                <td>9:00 AM – 4:30 PM</td>
+                                <td>Dress warmly; visit early for a quiet atmosphere and soft winter light on the ruins.</td>
+                            </tr>
+                            <tr>
+                                <td>Mar – May</td>
+                                <td>Monday – Sunday</td>
+                                <td>9:00 AM – 7:00 PM</td>
+                                <td>Ideal time for photos; enjoy blooming gardens around the complex.</td>
+                            </tr>
+                            <tr>
+                                <td>Jun – Aug</td>
+                                <td>Monday – Sunday</td>
+                                <td>9:00 AM – 7:00 PM</td>
+                                <td>Go early or late afternoon; the open spaces can get very hot. Bring water.</td>
+                            </tr>
+                            <tr>
+                                <td>Sep – Oct</td>
+                                <td>Monday – Sunday</td>
+                                <td>9:00 AM – 6:30 PM</td>
+                                <td>Comfortable temperatures perfect for exploring; afternoon light reveals the structure’s massive scale.</td>
+                            </tr>
+                            <tr>
+                                <td>Nov</td>
+                                <td>Monday – Sunday</td>
+                                <td>9:00 AM – 4:30 PM</td>
+                                <td>Visit before noon; check weather forecasts in case of slippery floors after rain.</td>
+                            </tr>
+                            <tr>
+                                <td>Dec</td>
+                                <td>Monday – Sunday</td>
+                                <td>9:00 AM – 4:30 PM</td>
+                                <td>Quietest period of the year; confirm holiday closures.</td>
+                            </tr>
+                        </tbody>
+                </table>
+                <div class="buy-ticket-container fade-in">
+                    <a href="https://colosseumrometickets.com/baths-caracalla/"
+                        target="_blank" class="buy-ticket-btn">BUY TICKET</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>
+            <img src="../SOURCE/IMG/copyright_cion.png" class="footer-icon">
+            2025 <a href="homepage.html" class="pone-link">Poneglyphs</a> • <a href="creators.html"
+                class="footer-link">Creators</a>
+        </p>
+        <div class="back-to-top-container">
+            <a href="#top" class="back-to-top">
+                Back to Top
+                <img src="../SOURCE/IMG/back_to_the_top_icon.png" alt="back-to-the-top" class="back-icon">
+            </a>
+        </div>
+    </footer>
+    <script src="../JS/colosseum.js"></script>
+</body>
+
+</html>

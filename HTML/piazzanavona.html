@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poneglyph</title>
+    <link rel="icon" href="../SOURCE/IMG/Poneglyph Logo.png" type="image/png">
+    <link rel="stylesheet" href="../CSS/colosseum.css">
+</head>
+
+<body id="top">
+    <header class="header">
+        <div>
+            <div class="logo">
+                <a href="../HTML/homepage.html#top" class="pone-link">
+                    <img src="../SOURCE/IMG/Poneglyph Logo.png" alt="Logo">
+                </a>
+            </div>
+
+            <div class="title-box">
+                <a href="../HTML/homepage.html#top" class="pone-link"><h1>PONEGLYPHS</h1>
+                    <p>Records of Stone and Memory</p>
+                </a>
+            </div>
+            <nav>
+                <div class="nav">
+                    <a href="../HTML/homepage.html#top" id="navHome">HOME</a>
+                    <a href="../HTML/homepage.html#about" id="navAbout">ABOUT</a>
+                    <a href="../HTML/explore.html" id="navExplore">EXPLORE</a>
+                    <a href="../HTML/creators.html" id="navCreators">CREATORS</a>
+                </div>
+
+                <div class="burger-menu" id="burgerMenu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <div class="mobile-nav" id="mobileNav">
+                    <a href="../HTML/homepage.html#top" id="navHome">HOME</a>
+                    <a href="../HTML/about.html#about" id="navAbout">ABOUT</a>
+                    <a href="../HTML/explore.html#explore" id="navExplore">EXPLORE</a>
+                    <a href="../HTML/creators.html#creators" id="navCreators">CREATORS</a>
+                </div>
+
+                <div class="search-box">
+                    <input type="text" placeholder="Search Monuments" id="searchInput">
+                    <img src="../SOURCE/IMG/search_icon.png" alt="search_icon" class="search-icon" id="searchBtn">
+
+                    <ul id="monumentsList">
+                        <li data-url="colosseum.html">
+                            <img src="../SOURCE/IMG/search_icon_colosseum.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Colosseum</span>
+                                <span class="li-subtitle">The iconic Roman amphitheater</span>
+                            </div>
+                        </li>
+                        <li data-url="stpetersbasilica.html">
+                            <img src="../SOURCE/IMG/search_icon_stpeter.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">St. Peter's Basilica</span>
+                                <span class="li-subtitle">Vatican City landmark</span>
+                            </div>
+                        </li>
+                        <li data-url="pantheon.html">
+                            <img src="../SOURCE/IMG/search_icon_pantheon.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Pantheon</span>
+                                <span class="li-subtitle">Ancient Roman temple</span>
+                            </div>
+                        </li>
+                        <li data-url="trevifountain.html">
+                            <img src="../SOURCE/IMG/search_icon_trevi.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Trevi Fountain</span>
+                                <span class="li-subtitle">Famous Roman fountain</span>
+                            </div>
+                        </li>
+                        <li data-url="romanforum.html">
+                            <img src="../SOURCE/IMG/search_icon_roman.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Roman Forum</span>
+                                <span class="li-subtitle">Center of ancient Rome</span>
+                            </div>
+                        </li>
+                        <li data-url="castelsantangelo.html">
+                            <img src="../SOURCE/IMG/search_icon_castel.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Castel Sant' Angelo</span>
+                                <span class="li-subtitle">Historic fortress and museum</span>
+                            </div>
+                        </li>
+                        <li data-url="piazzanavona.html">
+                            <img src="../SOURCE/IMG/search_icon_pizza.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Piazza Navona</span>
+                                <span class="li-subtitle">Baroque square in Rome</span>
+                            </div>
+                        </li>
+                        <li data-url="palatinehill.html">
+                            <img src="../SOURCE/IMG/search_icon_palatine.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Palatine Hill</span>
+                                <span class="li-subtitle">One of Rome's seven hills</span>
+                            </div>
+                        </li>
+                        <li data-url="bathsofcarcalla.html">
+                            <img src="../SOURCE/IMG/search_icon_baths.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Baths of Caracalla</span>
+                                <span class="li-subtitle">Ancient Roman public baths</span>
+                            </div>
+                        </li>
+                        <li data-url="alterofthefatherland.html">
+                            <img src="../SOURCE/IMG/search_icon_altar.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Altar of the Fatherland</span>
+                                <span class="li-subtitle">National monument of Italy</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="search-toggle" id="searchToggle">
+                    <img src="../SOURCE/IMG/search_icon_white.png" alt="search_icon">
+                </div>
+
+                <div class="search-box" id="mobileSearchBox">
+                    <input type="text" placeholder="Search Monuments" id="mobileSearchInput">
+                </div>
+                <ul id="mobileMonumentsList">
+                    <li data-url="colosseum.html">
+                        <img src="../SOURCE/IMG/search_icon_colosseum.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Colosseum</span>
+                            <span class="li-subtitle">The iconic Roman amphitheater</span>
+                        </div>
+                    </li>
+                    <li data-url="stpetersbasilica.html">
+                        <img src="../SOURCE/IMG/search_icon_stpeter.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">St. Peter's Basilica</span>
+                            <span class="li-subtitle">Vatican City landmark</span>
+                        </div>
+                    </li>
+                    <li data-url="pantheon.html">
+                        <img src="../SOURCE/IMG/search_icon_pantheon.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Pantheon</span>
+                            <span class="li-subtitle">Ancient Roman temple</span>
+                        </div>
+                    </li>
+                    <li data-url="trevifountain.html">
+                        <img src="../SOURCE/IMG/search_icon_trevi.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Trevi Fountain</span>
+                            <span class="li-subtitle">Famous Roman fountain</span>
+                        </div>
+                    </li>
+                    <li data-url="romanforum.html">
+                        <img src="../SOURCE/IMG/search_icon_roman.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Roman Forum</span>
+                            <span class="li-subtitle">Center of ancient Rome</span>
+                        </div>
+                    </li>
+                    <li data-url="castelsantangelo.html">
+                        <img src="../SOURCE/IMG/search_icon_castel.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Castel Sant' Angelo</span>
+                            <span class="li-subtitle">Historic fortress and museum</span>
+                        </div>
+                    </li>
+                    <li data-url="piazzanavona.html">
+                        <img src="../SOURCE/IMG/search_icon_pizza.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Piazza Navona</span>
+                            <span class="li-subtitle">Baroque square in Rome</span>
+                        </div>
+                    </li>
+                    <li data-url="palatinehill.html">
+                        <img src="../SOURCE/IMG/search_icon_palatine.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Palatine Hill</span>
+                            <span class="li-subtitle">One of Rome's seven hills</span>
+                        </div>
+                    </li>
+                    <li data-url="bathsofcarcalla.html">
+                        <img src="../SOURCE/IMG/search_icon_baths.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Baths of Caracalla</span>
+                            <span class="li-subtitle">Ancient Roman public baths</span>
+                        </div>
+                    </li>
+                    <li data-url="alterofthefatherland.html">
+                        <img src="../SOURCE/IMG/search_icon_altar.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Altar of the Fatherland</span>
+                            <span class="li-subtitle">National monument of Italy</span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-image-container">
+        <div class="hero-image">
+            <img src="../SOURCE/IMG/pizza_guide1.png" alt="Colosseum" class="base-image">
+            <img src="../SOURCE/IMG/guide_blackspace1.png" alt="shadow" class="bottom-overlay">
+            <div class="hero-text">
+                <h2>ROME</h2>
+                <h1>PIAZZA NAVONA</h1>
+                <p>
+                    <a href="https://www.google.com/maps/search/Explore%20Piazza%20Navona,%20Rome,%20Italy"
+                        target="_blank" class="location-link">
+                        <img src="../SOURCE/IMG/location_icon.png" alt="Location Icon" class="location-icon">
+                        Centro Storico, Rome, Italy
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider-top">
+
+    <div class="caption-container fade-in">
+        <span class="caption">Where water dances, baroque giants breathe, and ancient echoes linger, a plaza becomes aliving masterpiece in the heart of Rome.”</span>
+    </div>
+
+    <div class="polaroid fade-in">
+        <img src="../SOURCE/IMG/pizza_guide2.png" alt="Polaroid 1">
+        <img src="../SOURCE/IMG/pizza_guide3.png" alt="Polaroid 2">
+        <img src="../SOURCE/IMG/pizza_guide4.png" alt="Polaroid 3">
+    </div>
+
+    <hr class="section-divider-bottom">
+
+    <section class="monument-description fade-in">
+        <div class="monument-container">
+            <img src="../SOURCE/IMG/pizza_guide5.png" alt="Monument Description" class="base-image">
+            <img src="../SOURCE/IMG/guide_blackspace2.png" alt="Top Shadow Overlay" class="top-desc-shadow">
+            <img src="../SOURCE/IMG/guide_blackspace3.png" alt="Bottom Shadow Overlay" class="bottom-desc-shadow">
+            <img src="../SOURCE/IMG/pizza_guide6.png" alt="Colosseum Description Pic" class="colosseum_desc_pic">
+
+            <div class="md-logo-wrapper">
+                <a href="https://www.rome.net/piazza-navona" target="_blank" class="logo-link">
+                    <img src="../SOURCE/IMG/poneglyph_logo_small_guide.png" alt="Reference Link Pic" class="logo_small">
+                </a>
+                <span class="tooltip">Click to see more info</span>
+            </div>
+
+            <div class="colosseum-text">
+                <h1>PIAZZA NAVONA</h1>
+                <h2>Stadium of Domitian</h2>
+            </div>
+
+            <div class="colosseum-right-desc">
+                <p>
+                    Piazza Navona is one of Rome’s most <strong>vibrant and historically rich public squares</strong>, known for its elegant Baroque architecture.<br><br>
+                    Built on the outline of the ancient <strong>Stadium of Domitian</strong>, preserving the shape of the arena where athletic games were once held.<br><br>
+                    At the heart of the square stands the <strong>Fontana dei Quattro Fiumi</strong>, designed by <strong>Gian Lorenzo Bernini</strong> in 1651.<br><br>
+                    It is also home to the <strong>Church of Sant’Agnese in Agone</strong>, begun by architect <strong>Francesco Borromini</strong>.<br><br>
+                    The square stands as a living showcase of <strong>Roman history, art, and daily life</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="built_history fade-in">
+        <div class="history-content">
+            <div class="history-text">
+                <h1>HOW IT WAS BUILT</h1>
+                    <p>Piazza Navona occupies the exact site of the <strong>Stadium of Domitian</strong>, an ancient Roman athletic arena built by <strong>Emperor Domitian</strong> in the 1st century AD.</p>
+
+                    <p>The stadium was completed around <strong>86 AD</strong>, measuring about 275 meters long and holding up to <strong>30,000 spectators</strong>.</p>
+
+                    <p>By the 17th century, under <strong>Pope Innocent X</strong>, the site was transformed into the magnificent Baroque piazza seen today.</p>
+
+                    <p>The pope commissioned architects such as <strong>Gian Lorenzo Bernini</strong> and <strong>Francesco Borromini</strong> to redesign the square’s fountains and church façades.</p>
+            </div>
+
+            <div class="history-images">
+                <img src="../SOURCE/IMG/pizza_guide7.png" alt="Construction Image 1">
+                <img src="../SOURCE/IMG/pizza_guide8.png" alt="Construction Image 2">
+
+                <div class="history-logo-wrapper">
+                    <a href="https://www.britannica.com/place/Rome/Administration-and-society#ref23912" target="_blank"
+                        class="logo-link">
+                        <img src="../SOURCE/IMG/poneglyph_logo_small_guide.png" alt="Reference Link Pic"
+                            class="logo_small">
+                    </a>
+                    <span class="tooltip">Click to see more info</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="inside-arena fade-in">
+        <div class="arena-container">
+            <img src="../SOURCE/IMG/pizza_guide9.png" alt="Inside the Arena" class="base-arena-image">
+            <img src="../SOURCE/IMG/guide_blackspace2.png" alt="Top Shadow Overlay" class="top-arena-shadow">
+            <img src="../SOURCE/IMG/guide_blackspace3.png" alt="Bottom Shadow Overlay" class="bottom-arena-shadow">
+            <img src="../SOURCE/IMG/pizza_guide10.png" alt="Side Picture" class="arena-side-image">
+
+            <div class="inside-logo-wrapper">
+                <a href="https://www.britannica.com/place/Rome/Landscape" target="_blank" class="logo-link">
+                    <img src="../SOURCE/IMG/poneglyph_logo_small_guide.png" alt="Reference Link Pic" class="logo_small">
+                </a>
+                <span class="tooltip">Click to see more info</span>
+            </div>
+
+            <div class="arena-text">
+                <h1>INSIDE THE MONUMENT</h1>
+                    <p>
+                        The interior spaces connected to Piazza Navona reveal layers of history. Beneath the piazza lies the <strong>Stadium of Domitian</strong>, whose ancient brick corridors survive as underground galleries.<br><br>
+
+                        On the west side stands the <strong>Church of Sant’Agnese in Agone</strong>, displaying Borromini’s Baroque design with marble pilasters and a soaring dome.<br><br>
+
+                        The piazza’s fountains play an important role: the <strong>Fontana dei Quattro Fiumi</strong> features four river gods, while the <strong>Fontana del Moro</strong> presents a figure wrestling a dolphin.<br><br>
+
+                        At the northern end, the <strong>Fountain of Neptune</strong> shows the sea god battling marine creatures, creating a dramatic sense of movement.
+                    </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="structure-today fade-in">
+        <div class="structure-container">
+            <div class="structure-text">
+                <h1>THE STRUCTURE TODAY</h1>
+                    <p>
+                        Today, Piazza Navona stands as one of Rome’s <strong>most celebrated public squares</strong> and a masterpiece of Baroque urban design.
+                    </p>
+                    <p>
+                        It attracts millions of visitors who come to admire its <strong>fountains, historic buildings, and lively cafés</strong>.
+                    </p>
+                    <p>
+                        The piazza preserves the exact outline of the <strong>ancient Stadium of Domitian</strong>, allowing visitors to experience a public space active for nearly two thousand years.
+                    </p>
+            </div>
+            <div class="structure-image-container">
+                <img src="../SOURCE/IMG/pizza_guide11.png" alt="Structure Today" class="structure-image">
+                <img src="../SOURCE/IMG/pizza_guide12.png" alt="Additional Structure"
+                    class="structure-below-image">
+                <div class="structure-additional-text">
+                    <p>
+                        The central <strong>Fontana dei Quattro Fiumi</strong> remains the square’s most iconic feature, rising beneath an <strong>Egyptian obelisk</strong>.
+                    </p>
+                    <p>
+                        The <strong>Church of Sant’Agnese in Agone</strong> continues to serve both religious and artistic purposes.
+                    </p>
+                    <p>
+                        Today, Piazza Navona is protected and promoted as part of <strong>Rome’s cultural heritage</strong>, under the supervision of the <strong>Comune di Roma</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fun-facts fade-in">
+        <div class="fun-facts-container">
+            <img src="../SOURCE/IMG/pizza_guide13.png" alt="Fun Facts Base" class="funfacts-base">
+            <img src="../SOURCE/IMG/guide_blackspace2.png" alt="Top Shadow Overlay" class="funfacts-top-shadow">
+            <img src="../SOURCE/IMG/guide_blackspace3.png" alt="Bottom Shadow Overlay" class="funfacts-bottom-shadow">
+            <img src="../SOURCE/IMG/pizza_guide14.png" alt="Fun Fact Extra" class="funfacts-overlay">
+            <div class="fun-facts-text">
+                <h1>FUN FACTS</h1>
+                    <p>
+                        Piazza Navona is one of Rome’s most enchanting public spaces. The name “Navona” evolved from the Latin word <strong>agones</strong>, referring to athletic games.
+                    </p>
+                    <p>
+                        At the center stands the famous <strong>Fontana dei Quattro Fiumi</strong> (Fountain of the Four Rivers), designed by <strong>Bernini</strong>.
+                    </p>
+                    <p>
+                        The church of <strong>Sant’Agnese in Agone</strong> marks the spot where Saint Agnes was believed to have been martyred.
+                    </p>
+                    <p>
+                        Hidden beneath the modern surface are the impressive remains of <strong>Domitian’s Stadium</strong>, still accessible to visitors today.
+                    </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="visitor-info fade-in">
+        <div class="visitor-container">
+            <h1>VISITOR INFORMATION</h1>
+            <p>
+                <a href="https://www.google.com/maps/search/Explore%20Piazza%20Navona,%20Rome,%20Italy"
+                    target="_blank" class="location-link">
+                    <img src="../SOURCE/IMG/location_icon.png" alt="Location Icon" class="location-icon">
+                    Centro Storico, Rome, Italy
+                </a>
+            </p>
+            <a href="https://www.google.com/maps/search/Explore%20Piazza%20Navona,%20Rome,%20Italy"
+                target="_blank">
+                <img src="../SOURCE/IMG/pizza_guide15.png" alt="Visitor Info Image" class="visitor-image">
+            </a>
+        </div>
+    </section>
+
+    <section class="schedule fade-in">
+        <div class="schedule-container">
+            <img src="../SOURCE/IMG/pizza_guide16.png" alt="Schedule Base" class="schedule-base">
+            <img src="../SOURCE/IMG/guide_blackspace2.png" alt="Top Shadow Overlay" class="schedule-top-shadow">
+            <img src="../SOURCE/IMG/guide_blackspace3.png" alt="Bottom Shadow Overlay" class="schedule-bottom-shadow">
+            <div class="schedule-caption">SCHEDULE</div>
+
+            <div class="schedule-table-container">
+                <table class="schedule-table fade-in">
+                    <thead>
+                        <tr>
+                            <th>MONTH</th>
+                            <th>DAYS OPEN</th>
+                            <th>OPENING HOURS</th>
+                            <th>BEST TIP</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jan – Feb</td>
+                            <td>Monday – Sunday</td>
+                            <td>Open 24 hours</td>
+                            <td>Go early morning to enjoy a quiet piazza; winter light makes the fountains look dramatic.</td>
+                        </tr>
+                        <tr>
+                            <td>Mar – May</td>
+                            <td>Monday – Sunday</td>
+                            <td>Open 24 hours</td>
+                            <td>Visit around 9:00 AM before tour groups arrive; great time for photos of the Fountain of the Four Rivers.</td>
+                        </tr>
+                        <tr>
+                            <td>Jun – Aug</td>
+                            <td>Monday – Sunday</td>
+                            <td>Open 24 hours</td>
+                            <td>Visit early or late evening when temperatures are cooler; nighttime ambience is beautiful.</td>
+                        </tr>
+                        <tr>
+                            <td>Sep – Oct</td>
+                            <td>Monday – Sunday</td>
+                            <td>Open 24 hours</td>
+                            <td>Ideal weather; arrive in late afternoon for warm golden lighting.</td>
+                        </tr>
+                        <tr>
+                            <td>Nov</td>
+                            <td>Monday – Sunday</td>
+                            <td>Open 24 hours</td>
+                            <td>Morning visits are peaceful; occasional rain gives the square beautiful reflections.</td>
+                        </tr>
+                        <tr>
+                            <td>Dec</td>
+                            <td>Monday – Sunday</td>
+                            <td>Open 24 hours</td>
+                            <td>Enjoy the Christmas market and festive lights; evenings are atmospheric.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="buy-ticket-container fade-in">
+                    <a class="buy-ticket-btn">NO TICKETS NEEDED</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>
+            <img src="../SOURCE/IMG/copyright_cion.png" class="footer-icon">
+            2025 <a href="homepage.html" class="pone-link">Poneglyphs</a> • <a href="creators.html"
+                class="footer-link">Creators</a>
+        </p>
+        <div class="back-to-top-container">
+            <a href="#top" class="back-to-top">
+                Back to Top
+                <img src="../SOURCE/IMG/back_to_the_top_icon.png" alt="back-to-the-top" class="back-icon">
+            </a>
+        </div>
+    </footer>
+    <script src="../JS/colosseum.js"></script>
+</body>
+
+</html>

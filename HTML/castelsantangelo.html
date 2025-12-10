@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poneglyph</title>
+    <link rel="icon" href="../SOURCE/IMG/Poneglyph Logo.png" type="image/png">
+    <link rel="stylesheet" href="../CSS/colosseum.css">
+</head>
+
+<body id="top">
+    <header class="header">
+        <div>
+            <div class="logo">
+                <a href="../HTML/homepage.html#top" class="pone-link">
+                    <img src="../SOURCE/IMG/Poneglyph Logo.png" alt="Logo">
+                </a>
+            </div>
+
+            <div class="title-box">
+                <a href="../HTML/homepage.html#top" class="pone-link"><h1>PONEGLYPHS</h1>
+                    <p>Records of Stone and Memory</p>
+                </a>
+            </div>
+            <nav>
+                <div class="nav">
+                    <a href="../HTML/homepage.html#top" id="navHome">HOME</a>
+                    <a href="../HTML/homepage.html#about" id="navAbout">ABOUT</a>
+                    <a href="../HTML/explore.html" id="navExplore">EXPLORE</a>
+                    <a href="../HTML/creators.html" id="navCreators">CREATORS</a>
+                </div>
+
+                <div class="burger-menu" id="burgerMenu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <div class="mobile-nav" id="mobileNav">
+                    <a href="../HTML/homepage.html#top" id="navHome">HOME</a>
+                    <a href="../HTML/about.html#about" id="navAbout">ABOUT</a>
+                    <a href="../HTML/explore.html#explore" id="navExplore">EXPLORE</a>
+                    <a href="../HTML/creators.html#creators" id="navCreators">CREATORS</a>
+                </div>
+
+                <div class="search-box">
+                    <input type="text" placeholder="Search Monuments" id="searchInput">
+                    <img src="../SOURCE/IMG/search_icon.png" alt="search_icon" class="search-icon" id="searchBtn">
+
+                    <ul id="monumentsList">
+                        <li data-url="colosseum.html">
+                            <img src="../SOURCE/IMG/search_icon_colosseum.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Colosseum</span>
+                                <span class="li-subtitle">The iconic Roman amphitheater</span>
+                            </div>
+                        </li>
+                        <li data-url="stpetersbasilica.html">
+                            <img src="../SOURCE/IMG/search_icon_stpeter.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">St. Peter's Basilica</span>
+                                <span class="li-subtitle">Vatican City landmark</span>
+                            </div>
+                        </li>
+                        <li data-url="pantheon.html">
+                            <img src="../SOURCE/IMG/search_icon_pantheon.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Pantheon</span>
+                                <span class="li-subtitle">Ancient Roman temple</span>
+                            </div>
+                        </li>
+                        <li data-url="trevifountain.html">
+                            <img src="../SOURCE/IMG/search_icon_trevi.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Trevi Fountain</span>
+                                <span class="li-subtitle">Famous Roman fountain</span>
+                            </div>
+                        </li>
+                        <li data-url="romanforum.html">
+                            <img src="../SOURCE/IMG/search_icon_roman.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Roman Forum</span>
+                                <span class="li-subtitle">Center of ancient Rome</span>
+                            </div>
+                        </li>
+                        <li data-url="castelsantangelo.html">
+                            <img src="../SOURCE/IMG/search_icon_castel.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Castel Sant' Angelo</span>
+                                <span class="li-subtitle">Historic fortress and museum</span>
+                            </div>
+                        </li>
+                        <li data-url="piazzanavona.html">
+                            <img src="../SOURCE/IMG/search_icon_pizza.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Piazza Navona</span>
+                                <span class="li-subtitle">Baroque square in Rome</span>
+                            </div>
+                        </li>
+                        <li data-url="palatinehill.html">
+                            <img src="../SOURCE/IMG/search_icon_palatine.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Palatine Hill</span>
+                                <span class="li-subtitle">One of Rome's seven hills</span>
+                            </div>
+                        </li>
+                        <li data-url="bathsofcarcalla.html">
+                            <img src="../SOURCE/IMG/search_icon_baths.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Baths of Caracalla</span>
+                                <span class="li-subtitle">Ancient Roman public baths</span>
+                            </div>
+                        </li>
+                        <li data-url="alterofthefatherland.html">
+                            <img src="../SOURCE/IMG/search_icon_altar.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Altar of the Fatherland</span>
+                                <span class="li-subtitle">National monument of Italy</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="search-toggle" id="searchToggle">
+                    <img src="../SOURCE/IMG/search_icon_white.png" alt="search_icon">
+                </div>
+
+                <div class="search-box" id="mobileSearchBox">
+                    <input type="text" placeholder="Search Monuments" id="mobileSearchInput">
+                </div>
+                <ul id="mobileMonumentsList">
+                    <li data-url="colosseum.html">
+                        <img src="../SOURCE/IMG/search_icon_colosseum.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Colosseum</span>
+                            <span class="li-subtitle">The iconic Roman amphitheater</span>
+                        </div>
+                    </li>
+                    <li data-url="stpetersbasilica.html">
+                        <img src="../SOURCE/IMG/search_icon_stpeter.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">St. Peter's Basilica</span>
+                            <span class="li-subtitle">Vatican City landmark</span>
+                        </div>
+                    </li>
+                    <li data-url="pantheon.html">
+                        <img src="../SOURCE/IMG/search_icon_pantheon.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Pantheon</span>
+                            <span class="li-subtitle">Ancient Roman temple</span>
+                        </div>
+                    </li>
+                    <li data-url="trevifountain.html">
+                        <img src="../SOURCE/IMG/search_icon_trevi.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Trevi Fountain</span>
+                            <span class="li-subtitle">Famous Roman fountain</span>
+                        </div>
+                    </li>
+                    <li data-url="romanforum.html">
+                        <img src="../SOURCE/IMG/search_icon_roman.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Roman Forum</span>
+                            <span class="li-subtitle">Center of ancient Rome</span>
+                        </div>
+                    </li>
+                    <li data-url="castelsantangelo.html">
+                        <img src="../SOURCE/IMG/search_icon_castel.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Castel Sant' Angelo</span>
+                            <span class="li-subtitle">Historic fortress and museum</span>
+                        </div>
+                    </li>
+                    <li data-url="piazzanavona.html">
+                        <img src="../SOURCE/IMG/search_icon_pizza.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Piazza Navona</span>
+                            <span class="li-subtitle">Baroque square in Rome</span>
+                        </div>
+                    </li>
+                    <li data-url="palatinehill.html">
+                        <img src="../SOURCE/IMG/search_icon_palatine.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Palatine Hill</span>
+                            <span class="li-subtitle">One of Rome's seven hills</span>
+                        </div>
+                    </li>
+                    <li data-url="bathsofcarcalla.html">
+                        <img src="../SOURCE/IMG/search_icon_baths.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Baths of Caracalla</span>
+                            <span class="li-subtitle">Ancient Roman public baths</span>
+                        </div>
+                    </li>
+                    <li data-url="alterofthefatherland.html">
+                        <img src="../SOURCE/IMG/search_icon_altar.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Altar of the Fatherland</span>
+                            <span class="li-subtitle">National monument of Italy</span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-image-container">
+        <div class="hero-image">
+            <img src="../SOURCE/IMG/castel_guide1.png" alt="Colosseum" class="base-image">
+            <img src="../SOURCE/IMG/guide_blackspace1.png" alt="shadow" class="bottom-overlay">
+            <div class="hero-text">
+                <h2>ROME</h2>
+                <h1>CASTEL SANT ANGELO</h1>
+                <p>
+                    <a href="https://www.google.com/maps/search/Visit+Castel+Sant%27Angelo%2C+Rome%2C+Italy"
+                        target="_blank" class="location-link">
+                        <img src="../SOURCE/IMG/location_icon.png" alt="Location Icon" class="location-icon">
+                        Lungotevere Castello 50, Rome, Italy
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider-top">
+
+    <div class="caption-container fade-in">
+        <span class="caption">“Where emperor, angel, and pope share the same fortress, a monument of power, faith, and transformation rising above the Tiber.”</span>
+    </div>
+
+    <div class="polaroid fade-in">
+        <img src="../SOURCE/IMG/castel_guide2.png" alt="Polaroid 1">
+        <img src="../SOURCE/IMG/castel_guide3.png" alt="Polaroid 2">
+        <img src="../SOURCE/IMG/castel_guide4.png" alt="Polaroid 3">
+    </div>
+
+    <hr class="section-divider-bottom">
+
+    <section class="monument-description fade-in">
+        <div class="monument-container">
+            <img src="../SOURCE/IMG/castel_guide5.png" alt="Monument Description" class="base-image">
+            <img src="../SOURCE/IMG/guide_blackspace2.png" alt="Top Shadow Overlay" class="top-desc-shadow">
+            <img src="../SOURCE/IMG/guide_blackspace3.png" alt="Bottom Shadow Overlay" class="bottom-desc-shadow">
+            <img src="../SOURCE/IMG/castel_guide6.png" alt="Colosseum Description Pic" class="colosseum_desc_pic">
+
+            <div class="md-logo-wrapper">
+                <a href="https://www.britannica.com/topic/Castel-SantAngelo" target="_blank" class="logo-link">
+                    <img src="../SOURCE/IMG/poneglyph_logo_small_guide.png" alt="Reference Link Pic" class="logo_small">
+                </a>
+                <span class="tooltip">Click to see more info</span>
+            </div>
+
+            <div class="colosseum-text">
+                <h1>CASTEL SANT ANGELO</h1>
+                <h2>Mausoleum of Hadrian</h2>
+            </div>
+
+            <div class="colosseum-right-desc">
+                <p>
+                    Castel Sant’Angelo, also known as the <strong>Mausoleum of Hadrian</strong>, is one of Rome’s most remarkable monuments.<br><br>
+                    Originally built as the <strong>burial place</strong> of the Roman Emperor Hadrian and his family.<br><br>
+                    Located on the <strong>right bank of the Tiber River</strong>, near Vatican City.<br><br>
+                    Its name comes from a legend in <strong>590 AD</strong>, when Pope Gregory the Great saw the <strong>Archangel Michael</strong> sheathing his sword atop the mausoleum.<br><br>
+                    Originally commissioned by <strong>Emperor Hadrian</strong> around <strong>123 AD</strong>.<br><br>
+                    Now functions as the <strong>Museo Nazionale di Castel Sant’Angelo</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="built_history fade-in">
+        <div class="history-content">
+            <div class="history-text">
+                <h1>HOW IT WAS BUILT</h1>
+                    <p>Construction of the Mausoleum of Hadrian began around <strong>123 AD</strong> and was completed in <strong>139 AD</strong> under <strong>Emperor Antoninus Pius</strong>.</p>
+
+                    <p>The monument was designed as a massive <strong>cylindrical tower</strong> of stone and concrete, once covered in shining <strong>travertine marble</strong> and decorative bronze statues.</p>
+
+                    <p>In the 5th century, it was incorporated into Rome’s <strong>defensive walls</strong>, and during the Middle Ages, the popes transformed it into a <strong>fortress and refuge</strong>.</p>
+
+                    <p>Built using <strong>travertine, tufa, and Roman concrete</strong>, and later additions included towers, battlements, and papal apartments.</p>
+            </div>
+
+            <div class="history-images">
+                <img src="../SOURCE/IMG/castel_guide7.png" alt="Construction Image 1">
+                <img src="../SOURCE/IMG/castel_guide8.png" alt="Construction Image 2">
+
+                <div class="history-logo-wrapper">
+                    <a href="https://castelsantangelo.com/en/castel-sant-angelo-history/" target="_blank"
+                        class="logo-link">
+                        <img src="../SOURCE/IMG/poneglyph_logo_small_guide.png" alt="Reference Link Pic"
+                            class="logo_small">
+                    </a>
+                    <span class="tooltip">Click to see more info</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="inside-arena fade-in">
+        <div class="arena-container">
+            <img src="../SOURCE/IMG/castel_guide9.png" alt="Inside the Arena" class="base-arena-image">
+            <img src="../SOURCE/IMG/guide_blackspace2.png" alt="Top Shadow Overlay" class="top-arena-shadow">
+            <img src="../SOURCE/IMG/guide_blackspace3.png" alt="Bottom Shadow Overlay" class="bottom-arena-shadow">
+            <img src="../SOURCE/IMG/castel_guide10.png" alt="Side Picture" class="arena-side-image">
+
+            <div class="inside-logo-wrapper">
+                <a href="https://www.rome-roma.net/en/castel-sant-angelo-visit-and-history/" target="_blank" class="logo-link">
+                    <img src="../SOURCE/IMG/poneglyph_logo_small_guide.png" alt="Reference Link Pic" class="logo_small">
+                </a>
+                <span class="tooltip">Click to see more info</span>
+            </div>
+
+            <div class="arena-text">
+                <h1>INSIDE THE MONUMENT</h1>
+                    <p>
+                        The interior of Castel Sant’Angelo reveals its many historical transformations. Visitors move through <strong>seven levels</strong> that trace the monument’s evolution.<br><br>
+
+                        At the base is the <strong>Hall of Urns</strong>, where Hadrian’s remains were once kept, accessed by a <strong>spiral ramp</strong> built during Roman times.<br><br>
+
+                        In the upper levels, the <strong>papal apartments</strong> display Renaissance frescoes, ornate ceilings, and marble floors.<br><br>
+
+                        At the very top, the <strong>Terrace of the Angel</strong> offers breathtaking panoramic views of <strong>Rome and the Vatican</strong>, dominated by the bronze statue of Archangel Michael.
+                    </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="structure-today fade-in">
+        <div class="structure-container">
+            <div class="structure-text">
+                <h1>THE STRUCTURE TODAY</h1>
+                    <p>
+                        Today, Castel Sant’Angelo stands as a <strong>museum and national monument</strong>, part of Italy’s rich cultural heritage.
+                    </p>
+                    <p>
+                        It attracts millions of visitors yearly, who explore its halls, ancient ramparts, and the scenic terrace that overlooks the <strong>Tiber and St. Peter’s Basilica</strong>.
+                    </p>
+                    <p>
+                        The structure’s unique blend of <strong>Roman, medieval, and Renaissance architecture</strong> showcases nearly two thousand years of continuous use.
+                    </p>
+            </div>
+            <div class="structure-image-container">
+                <img src="../SOURCE/IMG/castel_guide11.png" alt="Structure Today" class="structure-image">
+                <img src="../SOURCE/IMG/castel_guide12.png" alt="Additional Structure"
+                    class="structure-below-image">
+                <div class="structure-additional-text">
+                    <p>
+                        Ongoing restoration ensures the preservation of its <strong>frescoes, artifacts, and fortifications</strong>.
+                    </p>
+                    <p>
+                        The site hosts art exhibitions and night tours that bring the monument’s dramatic history to life under <strong>illuminated stone arches</strong>.
+                    </p>
+                    <p>
+                        It is maintained by Italy’s <strong>Ministry of Culture</strong> and is connected to Vatican City via the <strong>Passetto di Borgo</strong>, still visible today.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fun-facts fade-in">
+        <div class="fun-facts-container">
+            <img src="../SOURCE/IMG/castel_guide13.png" alt="Fun Facts Base" class="funfacts-base">
+            <img src="../SOURCE/IMG/guide_blackspace2.png" alt="Top Shadow Overlay" class="funfacts-top-shadow">
+            <img src="../SOURCE/IMG/guide_blackspace3.png" alt="Bottom Shadow Overlay" class="funfacts-bottom-shadow">
+            <img src="../SOURCE/IMG/castel_guide14.png" alt="Fun Fact Extra" class="funfacts-overlay">
+            <div class="fun-facts-text">
+                <h1>FUN FACTS</h1>
+                    <p>
+                        Castel Sant’Angelo is wrapped in legends. The name comes from <strong>Pope Gregory the Great’s vision</strong> of the Archangel Michael ending a plague.
+                    </p>
+                    <p>
+                        The <strong>Ponte Sant’Angelo</strong>, leading to the castle, is adorned with angel statues designed by <strong>Gian Lorenzo Bernini</strong>.
+                    </p>
+                    <p>
+                        The final act of Puccini’s opera <strong>“Tosca”</strong> is set on the castle’s terrace.
+                    </p>
+                    <p>
+                        The angel statue atop the fortress was replaced several times; the current bronze version was made in <strong>1753</strong>.
+                    </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="visitor-info fade-in">
+        <div class="visitor-container">
+            <h1>VISITOR INFORMATION</h1>
+            <p>
+                <a href="https://www.google.com/maps/search/Visit+Castel+Sant%27Angelo%2C+Rome%2C+Italy"
+                    target="_blank" class="location-link">
+                    <img src="../SOURCE/IMG/location_icon.png" alt="Location Icon" class="location-icon">
+                    Lungotevere Castello 50, Rome, Italy
+                </a>
+            </p>
+            <a href="https://www.google.com/maps/search/Visit+Castel+Sant%27Angelo%2C+Rome%2C+Italy"
+                target="_blank">
+                <img src="../SOURCE/IMG/castel_guide15.png" alt="Visitor Info Image" class="visitor-image">
+            </a>
+        </div>
+    </section>
+
+    <section class="schedule fade-in">
+        <div class="schedule-container">
+            <img src="../SOURCE/IMG/castel_guide16.png" alt="Schedule Base" class="schedule-base">
+            <img src="../SOURCE/IMG/guide_blackspace2.png" alt="Top Shadow Overlay" class="schedule-top-shadow">
+            <img src="../SOURCE/IMG/guide_blackspace3.png" alt="Bottom Shadow Overlay" class="schedule-bottom-shadow">
+            <div class="schedule-caption">SCHEDULE</div>
+
+            <div class="schedule-table-container">
+                <table class="schedule-table fade-in">
+                    <thead>
+                        <tr>
+                            <th>MONTH</th>
+                            <th>DAYS OPEN</th>
+                            <th>OPENING HOURS</th>
+                            <th>BEST TIP</th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                            <tr>
+                                <td>Jan – Feb</td>
+                                <td>Tuesday – Sunday</td>
+                                <td>9:00 AM – 7:30 PM</td>
+                                <td>Visit early in the morning just after opening for fewer crowds and cooler ambience.</td>
+                            </tr>
+                            <tr>
+                                <td>Mar – May</td>
+                                <td>Tuesday – Sunday</td>
+                                <td>9:00 AM – 7:30 PM</td>
+                                <td>Mid-morning or late afternoon give great light on the terrace-view of Rome.</td>
+                            </tr>
+                            <tr>
+                                <td>Jun – Aug</td>
+                                <td>Tuesday – Sunday</td>
+                                <td>9:00 AM – 7:30 PM</td>
+                                <td>Try early morning or late afternoon; on some summer evenings there are extended hours.</td>
+                            </tr>
+                            <tr>
+                                <td>Sep – Oct</td>
+                                <td>Tuesday – Sunday</td>
+                                <td>9:00 AM – 7:30 PM</td>
+                                <td>Pleasant weather, nice views from the terrace at sunset, fewer extreme crowds.</td>
+                            </tr>
+                            <tr>
+                                <td>Nov</td>
+                                <td>Tuesday – Sunday</td>
+                                <td>9:00 AM – 7:30 PM</td>
+                                <td>Visit in the earlier part of the day for best light; check for any special hours.</td>
+                            </tr>
+                            <tr>
+                                <td>Dec</td>
+                                <td>Tuesday – Sunday</td>
+                                <td>9:00 AM – 7:30 PM</td>
+                                <td>Evening views with the castle lit up are atmospheric; arrive before dusk.</td>
+                            </tr>
+                        </tbody>
+                </table>
+                <div class="buy-ticket-container fade-in">
+                    <a href="https://castel-sant-angelo.net"
+                        target="_blank" class="buy-ticket-btn">BUY TICKET</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>
+            <img src="../SOURCE/IMG/copyright_cion.png" class="footer-icon">
+            2025 <a href="homepage.html" class="pone-link">Poneglyphs</a> • <a href="creators.html"
+                class="footer-link">Creators</a>
+        </p>
+        <div class="back-to-top-container">
+            <a href="#top" class="back-to-top">
+                Back to Top
+                <img src="../SOURCE/IMG/back_to_the_top_icon.png" alt="back-to-the-top" class="back-icon">
+            </a>
+        </div>
+    </footer>
+    <script src="../JS/colosseum.js"></script>
+</body>
+
+</html>

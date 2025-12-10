@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poneglyph</title>
+    <link rel="icon" href="../SOURCE/IMG/Poneglyph Logo.png" type="image/png">
+    <link rel="stylesheet" href="../CSS/colosseum.css">
+</head>
+
+<body id="top">
+    <header class="header">
+        <div>
+            <div class="logo">
+                <a href="../HTML/homepage.html#top" class="pone-link">
+                    <img src="../SOURCE/IMG/Poneglyph Logo.png" alt="Logo">
+                </a>
+            </div>
+
+            <div class="title-box">
+                <a href="../HTML/homepage.html#top" class="pone-link"><h1>PONEGLYPHS</h1>
+                    <p>Records of Stone and Memory</p>
+                </a>
+            </div>
+            <nav>
+                <div class="nav">
+                    <a href="../HTML/homepage.html#top" id="navHome">HOME</a>
+                    <a href="../HTML/homepage.html#about" id="navAbout">ABOUT</a>
+                    <a href="../HTML/explore.html" id="navExplore">EXPLORE</a>
+                    <a href="../HTML/creators.html" id="navCreators">CREATORS</a>
+                </div>
+
+                <div class="burger-menu" id="burgerMenu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <div class="mobile-nav" id="mobileNav">
+                    <a href="../HTML/homepage.html#top" id="navHome">HOME</a>
+                    <a href="../HTML/about.html#about" id="navAbout">ABOUT</a>
+                    <a href="../HTML/explore.html#explore" id="navExplore">EXPLORE</a>
+                    <a href="../HTML/creators.html#creators" id="navCreators">CREATORS</a>
+                </div>
+
+                <div class="search-box">
+                    <input type="text" placeholder="Search Monuments" id="searchInput">
+                    <img src="../SOURCE/IMG/search_icon.png" alt="search_icon" class="search-icon" id="searchBtn">
+
+                    <ul id="monumentsList">
+                        <li data-url="colosseum.html">
+                            <img src="../SOURCE/IMG/search_icon_colosseum.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Colosseum</span>
+                                <span class="li-subtitle">The iconic Roman amphitheater</span>
+                            </div>
+                        </li>
+                        <li data-url="stpetersbasilica.html">
+                            <img src="../SOURCE/IMG/search_icon_stpeter.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">St. Peter's Basilica</span>
+                                <span class="li-subtitle">Vatican City landmark</span>
+                            </div>
+                        </li>
+                        <li data-url="pantheon.html">
+                            <img src="../SOURCE/IMG/search_icon_pantheon.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Pantheon</span>
+                                <span class="li-subtitle">Ancient Roman temple</span>
+                            </div>
+                        </li>
+                        <li data-url="trevifountain.html">
+                            <img src="../SOURCE/IMG/search_icon_trevi.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Trevi Fountain</span>
+                                <span class="li-subtitle">Famous Roman fountain</span>
+                            </div>
+                        </li>
+                        <li data-url="romanforum.html">
+                            <img src="../SOURCE/IMG/search_icon_roman.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Roman Forum</span>
+                                <span class="li-subtitle">Center of ancient Rome</span>
+                            </div>
+                        </li>
+                        <li data-url="castelsantangelo.html">
+                            <img src="../SOURCE/IMG/search_icon_castel.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Castel Sant' Angelo</span>
+                                <span class="li-subtitle">Historic fortress and museum</span>
+                            </div>
+                        </li>
+                        <li data-url="piazzanavona.html">
+                            <img src="../SOURCE/IMG/search_icon_pizza.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Piazza Navona</span>
+                                <span class="li-subtitle">Baroque square in Rome</span>
+                            </div>
+                        </li>
+                        <li data-url="palatinehill.html">
+                            <img src="../SOURCE/IMG/search_icon_palatine.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Palatine Hill</span>
+                                <span class="li-subtitle">One of Rome's seven hills</span>
+                            </div>
+                        </li>
+                        <li data-url="bathsofcarcalla.html">
+                            <img src="../SOURCE/IMG/search_icon_baths.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Baths of Caracalla</span>
+                                <span class="li-subtitle">Ancient Roman public baths</span>
+                            </div>
+                        </li>
+                        <li data-url="alterofthefatherland.html">
+                            <img src="../SOURCE/IMG/search_icon_altar.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Altar of the Fatherland</span>
+                                <span class="li-subtitle">National monument of Italy</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="search-toggle" id="searchToggle">
+                    <img src="../SOURCE/IMG/search_icon_white.png" alt="search_icon">
+                </div>
+
+                <div class="search-box" id="mobileSearchBox">
+                    <input type="text" placeholder="Search Monuments" id="mobileSearchInput">
+                </div>
+                <ul id="mobileMonumentsList">
+                    <li data-url="colosseum.html">
+                        <img src="../SOURCE/IMG/search_icon_colosseum.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Colosseum</span>
+                            <span class="li-subtitle">The iconic Roman amphitheater</span>
+                        </div>
+                    </li>
+                    <li data-url="stpetersbasilica.html">
+                        <img src="../SOURCE/IMG/search_icon_stpeter.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">St. Peter's Basilica</span>
+                            <span class="li-subtitle">Vatican City landmark</span>
+                        </div>
+                    </li>
+                    <li data-url="pantheon.html">
+                        <img src="../SOURCE/IMG/search_icon_pantheon.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Pantheon</span>
+                            <span class="li-subtitle">Ancient Roman temple</span>
+                        </div>
+                    </li>
+                    <li data-url="trevifountain.html">
+                        <img src="../SOURCE/IMG/search_icon_trevi.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Trevi Fountain</span>
+                            <span class="li-subtitle">Famous Roman fountain</span>
+                        </div>
+                    </li>
+                    <li data-url="romanforum.html">
+                        <img src="../SOURCE/IMG/search_icon_roman.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Roman Forum</span>
+                            <span class="li-subtitle">Center of ancient Rome</span>
+                        </div>
+                    </li>
+                    <li data-url="castelsantangelo.html">
+                        <img src="../SOURCE/IMG/search_icon_castel.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Castel Sant' Angelo</span>
+                            <span class="li-subtitle">Historic fortress and museum</span>
+                        </div>
+                    </li>
+                    <li data-url="piazzanavona.html">
+                        <img src="../SOURCE/IMG/search_icon_pizza.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Piazza Navona</span>
+                            <span class="li-subtitle">Baroque square in Rome</span>
+                        </div>
+                    </li>
+                    <li data-url="palatinehill.html">
+                        <img src="../SOURCE/IMG/search_icon_palatine.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Palatine Hill</span>
+                            <span class="li-subtitle">One of Rome's seven hills</span>
+                        </div>
+                    </li>
+                    <li data-url="bathsofcarcalla.html">
+                        <img src="../SOURCE/IMG/search_icon_baths.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Baths of Caracalla</span>
+                            <span class="li-subtitle">Ancient Roman public baths</span>
+                        </div>
+                    </li>
+                    <li data-url="alterofthefatherland.html">
+                        <img src="../SOURCE/IMG/search_icon_altar.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Altar of the Fatherland</span>
+                            <span class="li-subtitle">National monument of Italy</span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-image-container">
+        <div class="hero-image">
+            <img src="../SOURCE/IMG/roman_guide1.png" alt="Colosseum" class="base-image">
+            <img src="../SOURCE/IMG/guide_blackspace1.png" alt="shadow" class="bottom-overlay">
+            <div class="hero-text">
+                <h2>ROME</h2>
+                <h1>ROMAN FORUM</h1>
+                <p>
+                    <a href="https://www.google.com/maps/search/Explore%20the%20Roman%20Forum,%20Rome,%20Italy"
+                        target="_blank" class="location-link">
+                        <img src="../SOURCE/IMG/location_icon.png" alt="Location Icon" class="location-icon">
+                        Via della Salara Vecchia, Rome, Italy
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider-top">
+
+    <div class="caption-container fade-in">
+        <span class="caption">“Where history and empire converge, echoing the voices of senators, citizens, and emperors who once shaped the ancient world.”</span>
+    </div>
+
+    <div class="polaroid fade-in">
+        <img src="../SOURCE/IMG/roman_guide2.png" alt="Polaroid 1">
+        <img src="../SOURCE/IMG/roman_guide3.png" alt="Polaroid 2">
+        <img src="../SOURCE/IMG/roman_guide4.png" alt="Polaroid 3">
+    </div>
+
+    <hr class="section-divider-bottom">
+
+    <section class="monument-description fade-in">
+        <div class="monument-container">
+            <img src="../SOURCE/IMG/roman_guide5.png" alt="Monument Description" class="base-image">
+            <img src="../SOURCE/IMG/guide_blackspace2.png" alt="Top Shadow Overlay" class="top-desc-shadow">
+            <img src="../SOURCE/IMG/guide_blackspace3.png" alt="Bottom Shadow Overlay" class="bottom-desc-shadow">
+            <img src="../SOURCE/IMG/roman_guide6.png" alt="Colosseum Description Pic" class="colosseum_desc_pic">
+
+            <div class="md-logo-wrapper">
+                <a href="https://www.britannica.com/topic/Roman-Forum" target="_blank" class="logo-link">
+                    <img src="../SOURCE/IMG/poneglyph_logo_small_guide.png" alt="Reference Link Pic" class="logo_small">
+                </a>
+                <span class="tooltip">Click to see more info</span>
+            </div>
+
+            <div class="colosseum-text">
+                <h1>ROMAN FORUM</h1>
+                <h2>Forum Romanum</h2>
+            </div>
+
+            <div class="colosseum-right-desc">
+                <p>
+                    The **Roman Forum**, known in Latin as <strong>Forum Romanum</strong>, was the <strong>beating heart of ancient Rome</strong>—its center of politics, commerce, and religion.<br><br>
+                    Surrounded by the ruins of <strong>temples, basilicas, and government buildings</strong>, it served as the stage where Rome’s greatest decisions were made.<br><br>
+                    Once lined with <strong>marble columns and bronze statues</strong>, it symbolizes the legacy of the Roman Republic and Empire.<br><br>
+                    The Forum was originally a <strong>swampy valley drained in the 7th century BCE</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="built_history fade-in">
+        <div class="history-content">
+            <div class="history-text">
+                <h1>HOW IT WAS BUILT</h1>
+                    <p>The construction of the Roman Forum evolved over many centuries, beginning in the <strong>7th century BCE</strong> under the early Roman kings.</p>
+
+                    <p>Originally a marshy area, the land was drained through the <strong>Cloaca Maxima</strong>, one of the world’s first sewage systems, to make way for a public space.</p>
+
+                    <p>Major reconstruction occurred during <strong>Julius Caesar’s and Augustus’ reigns</strong>, adding monumental temples and arches.</p>
+
+                    <p>The structures were built using <strong>travertine, marble, and tufa stone</strong>, with materials like bronze imported from across the empire.</p>
+            </div>
+
+            <div class="history-images">
+                <img src="../SOURCE/IMG/roman_guide7.png" alt="Construction Image 1">
+                <img src="../SOURCE/IMG/roman_guide8.png" alt="Construction Image 2">
+
+                <div class="history-logo-wrapper">
+                    <a href="https://www.britannica.com/topic/Roman-Forum#ref138558" target="_blank"
+                        class="logo-link">
+                        <img src="../SOURCE/IMG/poneglyph_logo_small_guide.png" alt="Reference Link Pic"
+                            class="logo_small">
+                    </a>
+                    <span class="tooltip">Click to see more info</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="inside-arena fade-in">
+        <div class="arena-container">
+            <img src="../SOURCE/IMG/roman_guide9.png" alt="Inside the Arena" class="base-arena-image">
+            <img src="../SOURCE/IMG/guide_blackspace2.png" alt="Top Shadow Overlay" class="top-arena-shadow">
+            <img src="../SOURCE/IMG/guide_blackspace3.png" alt="Bottom Shadow Overlay" class="bottom-arena-shadow">
+            <img src="../SOURCE/IMG/roman_guide10.png" alt="Side Picture" class="arena-side-image">
+
+            <div class="inside-logo-wrapper">
+                <a href="https://en.northleg.com/rome/sights/roman-forum/buildings-monuments/" target="_blank" class="logo-link">
+                    <img src="../SOURCE/IMG/poneglyph_logo_small_guide.png" alt="Reference Link Pic" class="logo_small">
+                </a>
+                <span class="tooltip">Click to see more info</span>
+            </div>
+
+            <div class="arena-text">
+                <h1>INSIDE THE ARENA</h1>
+                    <p>
+                        Though the Roman Forum is now open-air ruins, its “interior” once bustled with life. At its heart stood the <strong>Rostra</strong>, the platform where leaders like <strong>Cicero</strong> addressed the citizens.<br><br>
+
+                        Nearby stood the <strong>Curia Julia</strong>, the official meeting place of the Senate, still preserved today.<br><br>
+
+                        Temples such as the <strong>Temple of Saturn</strong> and <strong>Temple of Vesta</strong> housed sacred statues and treasures.<br><br>
+
+                        Marble-paved walkways connected basilicas like <strong>Basilica Julia</strong> and <strong>Basilica Aemilia</strong>, which served as courts and public offices.
+                    </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="structure-today fade-in">
+        <div class="structure-container">
+            <div class="structure-text">
+                <h1>THE STRUCTURE TODAY</h1>
+                    <p>
+                        Today, the Roman Forum stands as one of the <strong>most important archaeological sites in the world</strong>.
+                    </p>
+                    <p>
+                        Visitors can <strong>walk among its ruins</strong> and imagine the splendor of ancient Rome.
+                    </p>
+                    <p>
+                        Excavations and restorations continue to reveal new insights into how Romans <strong>lived, ruled, and worshiped</strong>.
+                    </p>
+            </div>
+            <div class="structure-image-container">
+                <img src="../SOURCE/IMG/roman_guide11.png" alt="Structure Today" class="structure-image">
+                <img src="../SOURCE/IMG/roman_guide12.png" alt="Additional Structure"
+                    class="structure-below-image">
+                <div class="structure-additional-text">
+                    <p>
+                        The site is now part of the <strong>Colosseum Archaeological Park</strong>, connecting the Colosseum, Palatine Hill, and the Forum into a single historical experience.
+                    </p>
+                    <p>
+                        The Forum is part of a <strong>UNESCO World Heritage Site</strong>.
+                    </p>
+                    <p>
+                        Ongoing restoration protects ancient stones from <strong>weathering and pollution</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fun-facts fade-in">
+        <div class="fun-facts-container">
+            <img src="../SOURCE/IMG/roman_guide13.png" alt="Fun Facts Base" class="funfacts-base">
+            <img src="../SOURCE/IMG/guide_blackspace2.png" alt="Top Shadow Overlay" class="funfacts-top-shadow">
+            <img src="../SOURCE/IMG/guide_blackspace3.png" alt="Bottom Shadow Overlay" class="funfacts-bottom-shadow">
+            <img src="../SOURCE/IMG/roman_guide14.png" alt="Fun Fact Extra" class="funfacts-overlay">
+            <div class="fun-facts-text">
+                <h1>FUN FACTS</h1>
+                    <p>
+                        The Roman Forum is full of fascinating stories. Once the most famous meeting place, it was also called the <strong>“Forum Magnum”</strong> and considered the heart of civilization.
+                    </p>
+                    <p>
+                        The <strong>Via Sacra</strong> was the main street of ancient Rome, used during triumphal parades.
+                    </p>
+                    <p>
+                        Many medieval and Renaissance buildings were built using <strong>stones taken from the Forum</strong>.
+                    </p>
+                    <p>
+                        Standing in the Forum gives a direct view of both the <strong>Colosseum and Palatine Hill</strong>.
+                    </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="visitor-info fade-in">
+        <div class="visitor-container">
+            <h1>VISITOR INFORMATION</h1>
+            <p>
+                <a href="https://www.google.com/maps/search/Explore%20the%20Roman%20Forum,%20Rome,%20Italy"
+                    target="_blank" class="location-link">
+                    <img src="../SOURCE/IMG/location_icon.png" alt="Location Icon" class="location-icon">
+                    Via della Salara Vecchia, Rome, Italy
+                </a>
+            </p>
+            <a href="https://www.google.com/maps/search/Explore%20the%20Roman%20Forum,%20Rome,%20Italy"
+                target="_blank">
+                <img src="../SOURCE/IMG/roman_guide15.png" alt="Visitor Info Image" class="visitor-image">
+            </a>
+        </div>
+    </section>
+
+    <section class="schedule fade-in">
+        <div class="schedule-container">
+            <img src="../SOURCE/IMG/roman_guide16.png" alt="Schedule Base" class="schedule-base">
+            <img src="../SOURCE/IMG/guide_blackspace2.png" alt="Top Shadow Overlay" class="schedule-top-shadow">
+            <img src="../SOURCE/IMG/guide_blackspace3.png" alt="Bottom Shadow Overlay" class="schedule-bottom-shadow">
+            <div class="schedule-caption">SCHEDULE</div>
+
+            <div class="schedule-table-container">
+                <table class="schedule-table fade-in">
+                    <thead>
+                        <tr>
+                            <th>MONTH</th>
+                            <th>DAYS OPEN</th>
+                            <th>OPENING HOURS</th>
+                            <th>BEST TIP</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jan – Feb</td>
+                            <td>Monday – Sunday</td>
+                            <td>9:00 AM – 4:30 PM</td>
+                            <td>Arrive around 9:00 AM for fewer crowds; dress warmly and wear sturdy shoes.</td>
+                        </tr>
+                        <tr>
+                            <td>Mar – May</td>
+                            <td>Monday – Sunday</td>
+                            <td>9:00 AM – 7:15 PM</td>
+                            <td>Visit mid-morning for great light; book online for combined Colosseum–Forum tickets.</td>
+                        </tr>
+                        <tr>
+                            <td>Jun – Aug</td>
+                            <td>Monday – Sunday</td>
+                            <td>9:00 AM – 7:15 PM</td>
+                            <td>Go early (before 9:30 AM) or late afternoon (after 5:00 PM); bring water, sunscreen, and a hat.</td>
+                        </tr>
+                        <tr>
+                            <td>Sep – Oct</td>
+                            <td>Monday – Sunday</td>
+                            <td>9:00 AM – 6:30 PM</td>
+                            <td>Ideal time to visit—warm but not hot; perfect for photos in golden afternoon light.</td>
+                        </tr>
+                        <tr>
+                            <td>Nov</td>
+                            <td>Monday – Sunday</td>
+                            <td>9:00 AM – 4:30 PM</td>
+                            <td>Visit before noon; check weather forecasts as rain may cause partial area closures.</td>
+                        </tr>
+                        <tr>
+                            <td>Dec</td>
+                            <td>Monday – Sunday</td>
+                            <td>9:00 AM – 4:30 PM</td>
+                            <td>Quieter season is great for peaceful walks; confirm opening hours on public holidays.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="buy-ticket-container fade-in">
+                    <a href="https://www.klook.com/en-PH/activity/15699-colosseum-skip-line-ticket-rome/"
+                        target="_blank" class="buy-ticket-btn">BUY TICKET</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>
+            <img src="../SOURCE/IMG/copyright_cion.png" class="footer-icon">
+            2025 <a href="homepage.html" class="pone-link">Poneglyphs</a> • <a href="creators.html"
+                class="footer-link">Creators</a>
+        </p>
+        <div class="back-to-top-container">
+            <a href="#top" class="back-to-top">
+                Back to Top
+                <img src="../SOURCE/IMG/back_to_the_top_icon.png" alt="back-to-the-top" class="back-icon">
+            </a>
+        </div>
+    </footer>
+    <script src="../JS/colosseum.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poneglyph</title>
+    <link rel="icon" href="../SOURCE/IMG/Poneglyph Logo.png" type="image/png">
+    <link rel="stylesheet" href="../CSS/colosseum.css">
+</head>
+
+<body id="top">
+    <header class="header">
+        <div>
+            <div class="logo">
+                <a href="../HTML/homepage.html#top" class="pone-link">
+                    <img src="../SOURCE/IMG/Poneglyph Logo.png" alt="Logo">
+                </a>
+            </div>
+
+            <div class="title-box">
+                <a href="../HTML/homepage.html#top" class="pone-link"><h1>PONEGLYPHS</h1>
+                    <p>Records of Stone and Memory</p>
+                </a>
+            </div>
+            <nav>
+                <div class="nav">
+                    <a href="../HTML/homepage.html#top" id="navHome">HOME</a>
+                    <a href="../HTML/homepage.html#about" id="navAbout">ABOUT</a>
+                    <a href="../HTML/explore.html" id="navExplore">EXPLORE</a>
+                    <a href="../HTML/creators.html" id="navCreators">CREATORS</a>
+                </div>
+
+                <div class="burger-menu" id="burgerMenu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <div class="mobile-nav" id="mobileNav">
+                    <a href="../HTML/homepage.html#top" id="navHome">HOME</a>
+                    <a href="../HTML/about.html#about" id="navAbout">ABOUT</a>
+                    <a href="../HTML/explore.html#explore" id="navExplore">EXPLORE</a>
+                    <a href="../HTML/creators.html#creators" id="navCreators">CREATORS</a>
+                </div>
+
+                <div class="search-box">
+                    <input type="text" placeholder="Search Monuments" id="searchInput">
+                    <img src="../SOURCE/IMG/search_icon.png" alt="search_icon" class="search-icon" id="searchBtn">
+
+                    <ul id="monumentsList">
+                        <li data-url="colosseum.html">
+                            <img src="../SOURCE/IMG/search_icon_colosseum.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Colosseum</span>
+                                <span class="li-subtitle">The iconic Roman amphitheater</span>
+                            </div>
+                        </li>
+                        <li data-url="stpetersbasilica.html">
+                            <img src="../SOURCE/IMG/search_icon_stpeter.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">St. Peter's Basilica</span>
+                                <span class="li-subtitle">Vatican City landmark</span>
+                            </div>
+                        </li>
+                        <li data-url="pantheon.html">
+                            <img src="../SOURCE/IMG/search_icon_pantheon.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Pantheon</span>
+                                <span class="li-subtitle">Ancient Roman temple</span>
+                            </div>
+                        </li>
+                        <li data-url="trevifountain.html">
+                            <img src="../SOURCE/IMG/search_icon_trevi.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Trevi Fountain</span>
+                                <span class="li-subtitle">Famous Roman fountain</span>
+                            </div>
+                        </li>
+                        <li data-url="romanforum.html">
+                            <img src="../SOURCE/IMG/search_icon_roman.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Roman Forum</span>
+                                <span class="li-subtitle">Center of ancient Rome</span>
+                            </div>
+                        </li>
+                        <li data-url="castelsantangelo.html">
+                            <img src="../SOURCE/IMG/search_icon_castel.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Castel Sant' Angelo</span>
+                                <span class="li-subtitle">Historic fortress and museum</span>
+                            </div>
+                        </li>
+                        <li data-url="piazzanavona.html">
+                            <img src="../SOURCE/IMG/search_icon_pizza.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Piazza Navona</span>
+                                <span class="li-subtitle">Baroque square in Rome</span>
+                            </div>
+                        </li>
+                        <li data-url="palatinehill.html">
+                            <img src="../SOURCE/IMG/search_icon_palatine.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Palatine Hill</span>
+                                <span class="li-subtitle">One of Rome's seven hills</span>
+                            </div>
+                        </li>
+                        <li data-url="bathsofcarcalla.html">
+                            <img src="../SOURCE/IMG/search_icon_baths.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Baths of Caracalla</span>
+                                <span class="li-subtitle">Ancient Roman public baths</span>
+                            </div>
+                        </li>
+                        <li data-url="alterofthefatherland.html">
+                            <img src="../SOURCE/IMG/search_icon_altar.png" class="li-icon" alt="icon">
+                            <div class="li-text">
+                                <span class="li-title">Altar of the Fatherland</span>
+                                <span class="li-subtitle">National monument of Italy</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="search-toggle" id="searchToggle">
+                    <img src="../SOURCE/IMG/search_icon_white.png" alt="search_icon">
+                </div>
+
+                <div class="search-box" id="mobileSearchBox">
+                    <input type="text" placeholder="Search Monuments" id="mobileSearchInput">
+                </div>
+                <ul id="mobileMonumentsList">
+                    <li data-url="colosseum.html">
+                        <img src="../SOURCE/IMG/search_icon_colosseum.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Colosseum</span>
+                            <span class="li-subtitle">The iconic Roman amphitheater</span>
+                        </div>
+                    </li>
+                    <li data-url="stpetersbasilica.html">
+                        <img src="../SOURCE/IMG/search_icon_stpeter.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">St. Peter's Basilica</span>
+                            <span class="li-subtitle">Vatican City landmark</span>
+                        </div>
+                    </li>
+                    <li data-url="pantheon.html">
+                        <img src="../SOURCE/IMG/search_icon_pantheon.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Pantheon</span>
+                            <span class="li-subtitle">Ancient Roman temple</span>
+                        </div>
+                    </li>
+                    <li data-url="trevifountain.html">
+                        <img src="../SOURCE/IMG/search_icon_trevi.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Trevi Fountain</span>
+                            <span class="li-subtitle">Famous Roman fountain</span>
+                        </div>
+                    </li>
+                    <li data-url="romanforum.html">
+                        <img src="../SOURCE/IMG/search_icon_roman.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Roman Forum</span>
+                            <span class="li-subtitle">Center of ancient Rome</span>
+                        </div>
+                    </li>
+                    <li data-url="castelsantangelo.html">
+                        <img src="../SOURCE/IMG/search_icon_castel.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Castel Sant' Angelo</span>
+                            <span class="li-subtitle">Historic fortress and museum</span>
+                        </div>
+                    </li>
+                    <li data-url="piazzanavona.html">
+                        <img src="../SOURCE/IMG/search_icon_pizza.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Piazza Navona</span>
+                            <span class="li-subtitle">Baroque square in Rome</span>
+                        </div>
+                    </li>
+                    <li data-url="palatinehill.html">
+                        <img src="../SOURCE/IMG/search_icon_palatine.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Palatine Hill</span>
+                            <span class="li-subtitle">One of Rome's seven hills</span>
+                        </div>
+                    </li>
+                    <li data-url="bathsofcarcalla.html">
+                        <img src="../SOURCE/IMG/search_icon_baths.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Baths of Caracalla</span>
+                            <span class="li-subtitle">Ancient Roman public baths</span>
+                        </div>
+                    </li>
+                    <li data-url="alterofthefatherland.html">
+                        <img src="../SOURCE/IMG/search_icon_altar.png" class="li-icon" alt="icon">
+                        <div class="li-text">
+                            <span class="li-title">Altar of the Fatherland</span>
+                            <span class="li-subtitle">National monument of Italy</span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-image-container">
+        <div class="hero-image">
+            <img src="../SOURCE/IMG/pantheon_guide1.png" alt="Colosseum" class="base-image">
+            <img src="../SOURCE/IMG/guide_blackspace1.png" alt="shadow" class="bottom-overlay">
+            <div class="hero-text">
+                <h2>ROME</h2>
+                <h1>PANTHEON</h1>
+                <p>
+                    <a href="https://www.google.com/maps/search/Visit%20the%20Pantheon,%20Rome,%20Italy"
+                        target="_blank" class="location-link">
+                        <img src="../SOURCE/IMG/location_icon.png" alt="Location Icon" class="location-icon">
+                        Piazza della Rotonda, Rome, Italy
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider-top">
+
+    <div class="caption-container fade-in">
+        <span class="caption">“Where the ancient gods once gathered beneath a perfect dome of stone and sky”</span>
+    </div>
+
+    <div class="polaroid fade-in">
+        <img src="../SOURCE/IMG/pantheon_guide2.png" alt="Polaroid 1">
+        <img src="../SOURCE/IMG/pantheon_guide3.png" alt="Polaroid 2">
+        <img src="../SOURCE/IMG/pantheon_guide4.png" alt="Polaroid 3">
+    </div>
+
+    <hr class="section-divider-bottom">
+
+    <section class="monument-description fade-in">
+        <div class="monument-container">
+            <img src="../SOURCE/IMG/pantheon_guide5.png" alt="Monument Description" class="base-image">
+            <img src="../SOURCE/IMG/guide_blackspace2.png" alt="Top Shadow Overlay" class="top-desc-shadow">
+            <img src="../SOURCE/IMG/guide_blackspace3.png" alt="Bottom Shadow Overlay" class="bottom-desc-shadow">
+            <img src="../SOURCE/IMG/pantheon_guide6.png" alt="Colosseum Description Pic" class="colosseum_desc_pic">
+
+            <div class="md-logo-wrapper">
+                <a href="https://www.britannica.com/topic/Pantheon-building-Rome-Italy" target="_blank" class="logo-link">
+                    <img src="../SOURCE/IMG/poneglyph_logo_small_guide.png" alt="Reference Link Pic" class="logo_small">
+                </a>
+                <span class="tooltip">Click to see more info</span>
+            </div>
+
+            <div class="colosseum-text">
+                <h1>PANTHEON</h1>
+                <h2>Temple of All Gods</h2>
+            </div>
+
+            <div class="colosseum-right-desc">
+                <p>
+                    The Pantheon is often called the <strong>Temple of All Gods</strong>, and later named <strong>Basilica di Santa Maria ad Martyres</strong>.<br><br>
+                    In Italian, it is known as <strong>Il Pantheon</strong>, and sometimes described as the <strong>Rotunda</strong> due to its circular design.<br><br>
+                    The Pantheon was completed around <strong>126 AD</strong> under <strong>Emperor Hadrian</strong>.<br><br>
+                    Its dome is <strong>43.3 meters wide</strong>, still the <strong>largest unreinforced concrete dome in the world</strong>.<br><br>
+                    The <strong>oculus</strong> at the center is <strong>9 meters wide</strong> and is the building’s <strong>only source of light</strong>.<br><br>
+                    Renowned individuals such as <strong>Raphael</strong> and several <strong>Italian kings</strong> are buried inside.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="built_history fade-in">
+        <div class="history-content">
+            <div class="history-text">
+                <h1>HOW IT WAS BUILT</h1>
+                    <p>The Pantheon standing today is the third version of the structure, rebuilt by <strong>Emperor Hadrian</strong> after two earlier temples burned down. Although Hadrian designed much of it, he kept the original inscription honoring <strong>Agrippa</strong>, the first builder.</p>
+
+                    <p>The Romans constructed the Pantheon using innovative engineering techniques, including progressively <strong>lighter concrete</strong> toward the top of the dome, hidden support chambers within the walls, and enormous <strong>granite columns</strong> transported from Egypt.</p>
+
+                    <p>The building process used <strong>marble, stone, brick, and specialized concrete mixtures</strong>.</p>
+
+                    <p><strong>Granite columns</strong> weigh nearly <strong>60 tons each</strong>, while the dome’s interior <strong>coffers</strong> helped reduce weight and increase stability.</p>
+
+                    <p>Its open <strong>oculus</strong> was designed not just for illumination but as a symbolic <strong>eye to the heavens</strong>.</p>
+            </div>
+
+            <div class="history-images">
+                <img src="../SOURCE/IMG/pantheon_guide7.png" alt="Construction Image 1">
+                <img src="../SOURCE/IMG/pantheon_guide8.png" alt="Construction Image 2">
+
+                <div class="history-logo-wrapper">
+                    <a href="https://www.worldhistory.org/article/780/the-parthenon-sculptures/" target="_blank"
+                        class="logo-link">
+                        <img src="../SOURCE/IMG/poneglyph_logo_small_guide.png" alt="Reference Link Pic"
+                            class="logo_small">
+                    </a>
+                    <span class="tooltip">Click to see more info</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="inside-arena fade-in">
+        <div class="arena-container">
+            <img src="../SOURCE/IMG/pantheon_guide9.png" alt="Inside the Arena" class="base-arena-image">
+            <img src="../SOURCE/IMG/guide_blackspace2.png" alt="Top Shadow Overlay" class="top-arena-shadow">
+            <img src="../SOURCE/IMG/guide_blackspace3.png" alt="Bottom Shadow Overlay" class="bottom-arena-shadow">
+            <img src="../SOURCE/IMG/pantheon_guide10.png" alt="Side Picture" class="arena-side-image">
+
+            <div class="inside-logo-wrapper">
+                <a href="https://en.wikipedia.org/wiki/Pantheon,_Rome#Interior" target="_blank" class="logo-link">
+                    <img src="../SOURCE/IMG/poneglyph_logo_small_guide.png" alt="Reference Link Pic" class="logo_small">
+                </a>
+                <span class="tooltip">Click to see more info</span>
+            </div>
+
+            <div class="arena-text">
+                <h1>INSIDE THE MONUMENT</h1>
+                    <p>
+                        The moment you enter the Pantheon, you step into a <strong>vast circular chamber</strong> filled with soft light descending from the <strong>oculus</strong>.<br><br>
+
+                        The dome’s <strong>28 evenly spaced coffers</strong> create the illusion of rising toward a celestial sphere, while the open oculus casts moving rings of light that glide across the marble like a slow-moving clock.<br><br>
+
+                        <strong>Raphael’s tomb</strong> rests inside, along with Italy’s kings <strong>Vittorio Emanuele II and Umberto I</strong>.<br><br>
+
+                        The interior design represents a <strong>perfectly balanced sphere</strong>, fitting flawlessly within the rotunda.<br><br>
+
+                        The floor contains <strong>hidden drainage holes</strong> to manage rainwater falling through the oculus.
+                    </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="structure-today fade-in">
+        <div class="structure-container">
+            <div class="structure-text">
+                <h1>THE STRUCTURE TODAY</h1>
+                    <p>
+                        Today, the Pantheon remains one of Rome’s <strong>most visited and most admired monuments</strong>, standing as a rare example of ancient architecture still intact.
+                    </p>
+                    <p>
+                        It continues to function as an <strong>active church</strong> where Mass is celebrated, especially on significant feast days.
+                    </p>
+                    <p>
+                        Despite earthquakes and urban changes, the Pantheon’s <strong>engineering genius</strong> has preserved it, allowing modern visitors to experience the building almost exactly as ancient Romans did.
+                    </p>
+            </div>
+            <div class="structure-image-container">
+                <img src="../SOURCE/IMG/pantheon_guide11.png" alt="Structure Today" class="structure-image">
+                <img src="../SOURCE/IMG/pantheon_guide12.png" alt="Additional Structure"
+                    class="structure-below-image">
+                <div class="structure-additional-text">
+                    <p>
+                        It remains the <strong>best-preserved ancient structure</strong> in Rome.
+                    </p>
+                    <p>
+                        Architects across centuries studied its <strong>perfect dome</strong> for inspiration.
+                    </p>
+                    <p>
+                        The building still feels structurally solid due to the <strong>thickness and strength</strong> of its ancient concrete.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fun-facts fade-in">
+        <div class="fun-facts-container">
+            <img src="../SOURCE/IMG/pantheon_guide13.png" alt="Fun Facts Base" class="funfacts-base">
+            <img src="../SOURCE/IMG/guide_blackspace2.png" alt="Top Shadow Overlay" class="funfacts-top-shadow">
+            <img src="../SOURCE/IMG/guide_blackspace3.png" alt="Bottom Shadow Overlay" class="funfacts-bottom-shadow">
+            <img src="../SOURCE/IMG/pantheon_guide14.png" alt="Fun Fact Extra" class="funfacts-overlay">
+            <div class="fun-facts-text">
+                <h1>FUN FACTS</h1>
+                    <p>
+                        The oculus is often called the <strong>“Eye of the Pantheon,”</strong> designed to let in light, air, rain, and symbolism. During <strong>Pentecost</strong>, thousands of <strong>red rose petals</strong> are poured through it.
+                    </p>
+                    <p>
+                        The Pantheon’s dome inspired the dome of <strong>Florence Cathedral</strong>.
+                    </p>
+                    <p>
+                        It is the oldest building still in <strong>continuous use</strong> for nearly <strong>1,900 years</strong>.
+                    </p>
+                    <p>
+                        Rain falls directly inside, but the <strong>floor drains almost instantly</strong> due to the clever slope and drainage system.
+                    </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="visitor-info fade-in">
+        <div class="visitor-container">
+            <h1>VISITOR INFORMATION</h1>
+            <p>
+                <a href="https://www.google.com/maps/search/Visit%20the%20Pantheon,%20Rome,%20Italy"
+                    target="_blank" class="location-link">
+                    <img src="../SOURCE/IMG/location_icon.png" alt="Location Icon" class="location-icon">
+                    Piazza della Rotonda, Rome, Italy
+                </a>
+            </p>
+            <a href="https://www.google.com/maps/search/Visit%20the%20Pantheon,%20Rome,%20Italy"
+                target="_blank">
+                <img src="../SOURCE/IMG/pantheon_guide15.png" alt="Visitor Info Image" class="visitor-image">
+            </a>
+        </div>
+    </section>
+
+    <section class="schedule fade-in">
+        <div class="schedule-container">
+            <img src="../SOURCE/IMG/pantheon_guide16.png" alt="Schedule Base" class="schedule-base">
+            <img src="../SOURCE/IMG/guide_blackspace2.png" alt="Top Shadow Overlay" class="schedule-top-shadow">
+            <img src="../SOURCE/IMG/guide_blackspace3.png" alt="Bottom Shadow Overlay" class="schedule-bottom-shadow">
+            <div class="schedule-caption">SCHEDULE</div>
+
+            <div class="schedule-table-container">
+                <table class="schedule-table fade-in">
+                    <thead>
+                        <tr>
+                            <th>MONTH</th>
+                            <th>DAYS OPEN</th>
+                            <th>OPENING HOURS</th>
+                            <th>BEST TIP</th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                            <tr>
+                                <td>Jan – Feb</td>
+                                <td>Monday – Sunday</td>
+                                <td>9:00 AM – 6:30 PM</td>
+                                <td>Visit mid-morning (around 10:00 AM) when crowds are thinner and lighting is soft.</td>
+                            </tr>
+                            <tr>
+                                <td>Mar – May</td>
+                                <td>Monday – Sunday</td>
+                                <td>9:00 AM – 7:00 PM</td>
+                                <td>Arrive early before 10:00 AM to enjoy the interior in calm light; buy tickets online to skip queues.</td>
+                            </tr>
+                            <tr>
+                                <td>Jun – Aug</td>
+                                <td>Monday – Sunday</td>
+                                <td>9:00 AM – 7:00 PM</td>
+                                <td>Visit early morning or late afternoon to avoid heat; wear light clothing and bring water.</td>
+                            </tr>
+                            <tr>
+                                <td>Sep – Oct</td>
+                                <td>Monday – Sunday</td>
+                                <td>9:00 AM – 7:00 PM</td>
+                                <td>September mornings are great for photos; enjoy fewer crowds in late afternoons.</td>
+                            </tr>
+                            <tr>
+                                <td>Nov</td>
+                                <td>Monday – Sunday</td>
+                                <td>9:00 AM – 6:30 PM</td>
+                                <td>Mornings are quieter; bringing an umbrella light rain makes the oculus view stunning.</td>
+                            </tr>
+                            <tr>
+                                <td>Dec</td>
+                                <td>Monday – Sunday</td>
+                                <td>9:00 AM – 6:30 PM</td>
+                                <td>Visit early to avoid Christmas tourists; check for limited hours on holidays.</td>
+                            </tr>
+                        </tbody>
+                </table>
+                <div class="buy-ticket-container fade-in">
+                    <a href="https://www.pantheonroma.com/en/visit-the-pantheon/"
+                        target="_blank" class="buy-ticket-btn">BUY TICKET</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>
+            <img src="../SOURCE/IMG/copyright_cion.png" class="footer-icon">
+            2025 <a href="homepage.html" class="pone-link">Poneglyphs</a> • <a href="creators.html"
+                class="footer-link">Creators</a>
+        </p>
+        <div class="back-to-top-container">
+            <a href="#top" class="back-to-top">
+                Back to Top
+                <img src="../SOURCE/IMG/back_to_the_top_icon.png" alt="back-to-the-top" class="back-icon">
+            </a>
+        </div>
+    </footer>
+    <script src="../JS/colosseum.js"></script>
+</body>
+
+</html>
