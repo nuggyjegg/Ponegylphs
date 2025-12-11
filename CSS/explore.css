@@ -725,4 +725,18 @@ body {
         width: 150%;
         flex-shrink: 0;
     }
+
+}
+
+    .footer {
+        border: none;
+        margin-bottom: 20px; 
+    }
+    
+    .footer p, 
+    .footer a.pone-link, 
+    .footer a.footer-link {
+        display: none; 
+    }
+
 }
