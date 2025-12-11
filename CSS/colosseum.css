@@ -2036,7 +2036,7 @@ body {
     }
 
     .arena-text h1 {
-        font-size: 10px;
+        font-size: 50px;
         margin: -10px 0 300px 0;
     }
 
@@ -2301,4 +2301,5 @@ body {
     }
 
 }
+
 
