@@ -2036,7 +2036,7 @@ body {
     }
 
     .arena-text h1 {
-        font-size: 60px;
+        font-size: 40px;
         margin: -10px 0 300px 0;
     }
 
@@ -2299,4 +2299,5 @@ body {
         transform: translate(-50%, -50%);
         margin: 0;
     }
+
 }
